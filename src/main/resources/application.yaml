@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://dpg-cgm5n33hp8u2dv745im0-a.oregon-postgres.render.com/iplstats
+    username: dbuser
+    password: DDzx9QyY1ABBBEZ4BqgDFltWdjIuIdZ8
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8090
+  servlet:
+    context-path: /iplstats
+
+
