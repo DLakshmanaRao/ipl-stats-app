@@ -7,4 +7,4 @@ RUN cp /home/ipl-stats/target/*.jar iplstats.jar
 
 ENTRYPOINT [ "java","-jar","iplstats.jar" ]
 
-EXPOSE 8092
+EXPOSE 8094
