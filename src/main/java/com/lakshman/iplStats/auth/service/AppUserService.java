@@ -37,13 +37,4 @@ public class AppUserService implements UserDetailsService {
 
     private List<UserDetails> userDetails;
 
-    @PostConstruct
-    public void init() {
-        userDetails = new ArrayList<>(List.of(
-                User.withUsername("user")
-                        .password(passwordEncoder.encode("user@123")).authorities("ROLE_USER").build(),
-                User.withUsername("admin")
-                        .password(passwordEncoder.encode("admin@123")).authorities("ROLE_ADMIN").build()
-        ));
-    }
 }
